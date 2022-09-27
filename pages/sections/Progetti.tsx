@@ -31,10 +31,10 @@ const Progetti = () => {
   return (
     <>
       <section id="progetti" className="px-5 my-20">
-        <h1 className=" text-black font-semibold uppercase text-2xl tracking-wide text-center mb-12 lg:text-4xl md:mb-20">
+        <h1 className=" text-white font-semibold uppercase text-2xl tracking-wide text-center mb-12 lg:text-4xl md:mb-20">
           i nostri progetti
         </h1>
-        <div className=" md:flex justify-center items-center border-red-800 border-2 p-2 xl:mx-40">
+        <div className=" lg:grid-cols-3 md:grid grid-cols-2 gap-4 items-center xl:mx-20 m-auto">
           {progetti.map((progetto) => (
             <ProjectCard
               key={progetto.index}

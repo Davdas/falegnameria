@@ -3,14 +3,14 @@ import React from "react";
 const ChiSiamo = () => {
   return (
     <>
-      <section id="chi siamo" className="px-5 mt-20 w-full">
-        <div className=" md:grid grid-cols-2 gap-2 items-center">
-          <div className=" text-white max-w-2xl md:m-auto">
-            <h1 className=" text-black font-semibold uppercase py-3 px-1 text-2xl tracking-wide lg:text-3xl">
+      <section id="chi siamo" className=" mt-20 w-full">
+        <div className=" md:grid grid-cols-2 gap-2 items-center m-auto xl:px-24 md:px-4 px-3">
+          <div className=" text-white md:m-auto">
+            <h1 className=" text-white font-semibold uppercase py-3 px-1 text-2xl tracking-wide lg:text-3xl">
               artigiani del legno
             </h1>
-            <div className=" tracking-wide italic text-stone-700 pr-4">
-              <p className=" md:mb-10 py-3 text-sm font-light">
+            <div className=" tracking-wide italic text-stone-200 pr-4">
+              <p className=" md:mb-10 text-sm font-light">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Cupiditate dolor laborum odio. Consequatur ipsa dolorum sint!
                 Doloremque sit tenetur numquam tempore, libero veritatis, ipsa
@@ -19,7 +19,7 @@ const ChiSiamo = () => {
               <hr className="w-[80%]" />
             </div>
           </div>
-          <div className=" max-w-3xl m-auto shadow-lg ">
+          <div className=" shadow-lg p-2 mt-4">
             <img src="/ChiSiamo .png" alt="" className="w-full h-full" />
           </div>
         </div>
