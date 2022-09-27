@@ -10,9 +10,9 @@ const HeroSection = () => {
           className="hidden sm:block m-auto object-cover"
         />
         <img
-          src="/bgmobile.png"
+          src="/mobile2.png"
           alt=""
-          className=" sm:hidden w-full m-auto object-cover"
+          className=" sm:hidden w-full m-auto h-full"
         />
         <div className=" bg-black/40 z-10 w-full bg-cover bg-center absolute top-0 left-0 right-0 bottom-0"></div>
       </div>
