@@ -4,6 +4,9 @@ import { BsFacebook, BsInstagram } from "react-icons/bs";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-scroll";
+import Button from "../common/Button";
+import Contatti from "../../pages/sections/Contatti";
+('import Link from "next/link"');
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -54,14 +57,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li className=" ml-10 text-sm uppercase hover:border-b">
-              <Link
-                to="contatti"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={200}
-              ></Link>
-              contatti
+              <Contatti />
             </li>
             <div className=" px-2 flex cursor-pointer">
               <BsFacebook className=" mr-2" />
@@ -88,7 +84,7 @@ const Navbar = () => {
           <div
             className={
               nav
-                ? " fixed top-0 left-0 w-[75%] sm:w-[64%] md:w-[45%] h-screen bg-stone-400 p-4 ease-in duration-300"
+                ? " fixed top-0 left-0 w-[75%] sm:w-[64%] md:w-[45%] h-screen bg-white p-4 ease-in duration-300"
                 : " fixed top-[0] left-[-200%] p-4 ease-in duration-300"
             }
           >
@@ -99,7 +95,7 @@ const Navbar = () => {
                 height="55"
                 alt="/"
               />
-              <div onClick={handleNav} className=" cursor-pointer text-white">
+              <div onClick={handleNav} className=" cursor-pointer text-black">
                 <AiOutlineClose size={25} />
               </div>
             </div>
@@ -108,30 +104,23 @@ const Navbar = () => {
                 creiamo arredamenti su misura per la tua casa
               </p>
             </div>
-            <div className=" flex flex-col mt-10">
-              <ul className=" uppercase text-white text-sm text-center">
-                <li className=" my-8 text-stone-700 hover:text-white font-semibold">
-                  chi siamo
-                </li>
-                <li className=" my-8 text-stone-700 hover:text-white font-semibold">
-                  progetti
-                </li>
-                <li className=" my-8 text-stone-700 hover:text-white font-semibold">
-                  contatti
-                </li>
-                <li className=" text-stone-700 hover:text-white font-semibold">
-                  canali social
-                </li>
-                <div className=" flex justify-center p-2 cursor-pointer">
+            <div className=" flex flex-col mt-2">
+              <ul className=" uppercase text-black text-sm text-center font-semibold">
+                <li className=" my-8">chi siamo</li>
+                <li className=" my-8">progetti</li>
+                <li className=" my-8">contatti</li>
+                <li className=" my-8">canali social</li>
+                <div className=" flex justify-center cursor-pointer">
                   <BsFacebook className=" mr-2 text-stone-700" size={18} />
                   <BsInstagram className=" text-stone-700" size={18} />
                 </div>
-                <li className=" text-stone-700 hover:text-white font-semibold">
-                  preventivo
-                </li>
+                <li className=" text-black font-semibold my-8">preventivo</li>
               </ul>
-              <div className=" flex justify-center items-center bg-stone-700 rounded-xl text-white mt-2 w-1/2 m-auto hover:bg-stone-800">
-                <button className=" uppercase py-2">scopri di piu'</button>
+              <div className=" text-center">
+                <Button
+                  text="Scopri di piu"
+                  className="text-black font-semibold"
+                />
               </div>
             </div>
           </div>

@@ -18,22 +18,22 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <Link href={linkUrl}>
-      <div className="cursor-pointer w-full h-full relative shadow-lg hover:scale-[102%] ease-in duration-200 p-4 mr-4 rounded-md bg-neutral-800 mt-4">
+      <div className="cursor-pointer w-full h-full relative shadow-md shadow-white hover:scale-[102%] ease-in duration-200 p-4 mr-4 rounded-md bg-neutral-900 mt-4">
         {/* Index */}
         <span className=" text-7xl text-amber-600 absolute top-[-25px] right-[-10px] italic md:left-[20px]">
           {index}
         </span>
 
         <div
-          className={`w-full min-h-[300px] bg-cover bg-center `}
+          className={`w-full min-h-[400px] bg-cover bg-center `}
           style={{ backgroundImage: `url(/${imgUrl})` }}
         />
 
         <div className=" p-4">
-          <h2 className=" text-amber-600 uppercase tracking-wide text-3xl mt-3 font-semibold ">
+          <h2 className=" text-amber-600 uppercase tracking-wide text-3xl mt-3">
             {title}
           </h2>
-          <p className=" text-stone-200 italic">{text}</p>
+          <p className=" text-white italic">{text}</p>
         </div>
       </div>
     </Link>

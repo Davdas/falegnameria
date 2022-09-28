@@ -3,6 +3,7 @@ import Head from "next/head";
 import HeroSection from "./sections/HeroSection";
 import Navbar from "../components/layout/Navbar";
 import ChiSiamo from "./sections/ChiSiamo";
+import Contatti from "./sections/Contatti";
 import Progetti from "./sections/Progetti";
 
 const Home: NextPage = () => {
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
       <HeroSection />
       <ChiSiamo />
       <Progetti />
+      <Contatti />
     </div>
   );
 };

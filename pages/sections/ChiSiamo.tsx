@@ -3,9 +3,10 @@ import React from "react";
 const ChiSiamo = () => {
   return (
     <>
-      <section id="chi siamo" className=" mt-20 w-full">
-        <div className=" md:grid grid-cols-2 gap-2 items-center m-auto xl:px-24 md:px-4 px-3">
+      <section id="chi siamo" className=" my-28 w-full">
+        <div className=" md:grid grid-cols-2 gap-2 items-center m-auto xl:px-24 px-4">
           <div className=" text-white md:m-auto">
+            <hr className="w-[30%] border-1 border-amber-600 mb-5" />
             <h1 className=" text-white font-semibold uppercase py-3 px-1 text-2xl tracking-wide lg:text-3xl">
               artigiani del legno
             </h1>
@@ -16,12 +17,20 @@ const ChiSiamo = () => {
                 Doloremque sit tenetur numquam tempore, libero veritatis, ipsa
                 ex.
               </p>
-              <hr className="w-[80%]" />
+              <br />
+              <p className=" md:mb-10 text-sm font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate dolor laborum odio. Consequatur ipsa dolorum sint!
+                Doloremque sit tenetur numquam tempore, libero veritatis, ipsa
+                ex. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate dolor laborum odio. Consequatur ipsa dolorum sint!
+                Doloremque sit tenetur numquam tempore, libero veritatis, ipsa
+                ex.
+              </p>
+              <hr className="w-[80%] border-1 border-amber-600" />
             </div>
           </div>
-          <div className=" shadow-lg p-2 mt-4">
-            <img src="/ChiSiamo .png" alt="" className="w-full h-full" />
-          </div>
+          <div className=" w-full min-h-[500px] bg-no-repeat bg-cover bg-center shadow-lg p-2 mt-4 bg-[url('/ChiSiamo.png')]"></div>
         </div>
       </section>
     </>
