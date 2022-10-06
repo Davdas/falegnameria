@@ -6,7 +6,6 @@ import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-scroll";
 import Button from "../common/Button";
 import Contatti from "../../pages/sections/Contatti";
-('import Link from "next/link"');
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);

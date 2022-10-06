@@ -5,6 +5,7 @@ import Navbar from "../components/layout/Navbar";
 import ChiSiamo from "./sections/ChiSiamo";
 import Contatti from "./sections/Contatti";
 import Progetti from "./sections/Progetti";
+import Footer from "../components/layout/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
       <ChiSiamo />
       <Progetti />
       <Contatti />
+      <Footer />
     </div>
   );
 };

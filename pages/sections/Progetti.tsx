@@ -56,7 +56,7 @@ const Progetti = () => {
           i nostri progetti
         </h1>
 
-        <div className=" lg:grid-cols-3 md:grid grid-cols-2 gap-6 items-center xl:mx-20 m-auto">
+        <div className=" lg:grid-cols-3 md:grid grid-cols-2 mx-4 gap-6 items-center xl:mx-20 m-auto">
           {progetti.map((progetto) => (
             <ProjectCard
               key={progetto.index}
