@@ -14,7 +14,7 @@ const progetti: ProjectCardProps[] = [
   {
     imgUrl: "CameraDaLetto.png",
     index: "02",
-    linkUrl: "/",
+    linkUrl: "/ambienti/camera-da-letto",
     title: " Camera da letto",
     text: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati nobis nostrum exercitationem accusantium blanditiis",
   },
