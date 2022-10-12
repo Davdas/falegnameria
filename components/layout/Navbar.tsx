@@ -3,9 +3,9 @@ import Image from "next/image";
 import { BsFacebook, BsInstagram } from "react-icons/bs";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import Link from "next/link";
 import Button from "../common/Button";
-import Contatti from "../../pages/sections/Contatti";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -23,7 +23,7 @@ const Navbar = () => {
           </li>
           <div className=" hidden lg:flex font-semibold">
             <li className=" text-sm uppercase hover:border-b mr-10">
-              <Link
+              <ScrollLink
                 to="home"
                 spy={true}
                 smooth={true}
@@ -31,41 +31,41 @@ const Navbar = () => {
                 duration={200}
               >
                 home
-              </Link>
+              </ScrollLink>
             </li>
             <li className=" text-sm uppercase hover:border-b">
-              <Link
+              <ScrollLink
                 to="chi siamo"
                 spy={true}
                 smooth={true}
-                offset={-30}
+                offset={-100}
                 duration={200}
               >
                 chi siamo
-              </Link>
+              </ScrollLink>
             </li>
             <li className=" ml-10 text-sm uppercase hover:border-b">
-              <Link
+              <ScrollLink
                 to="progetti"
                 spy={true}
                 smooth={true}
-                offset={-10}
+                offset={-100}
                 duration={200}
               >
                 progetti
-              </Link>
+              </ScrollLink>
             </li>
-            <li className=" ml-10 text-sm uppercase hover:border-b">
-              <Contatti />
-            </li>
+            <li className=" ml-10 text-sm uppercase hover:border-b"></li>
             <div className=" px-2 flex cursor-pointer">
               <BsFacebook className=" mr-2" />
               <BsInstagram />
             </div>
           </div>
-          <li className=" hidden lg:flex bg-stone-700 text-sm uppercase px-5 py-2 rounded-2xl font-semibold hover:bg-stone-600">
-            preventivo
-          </li>
+          <Link href="/preventivo">
+            <li className=" hidden lg:flex border border-white text-sm rounded-sm uppercase px-5 py-2 font-semibold hover:bg-stone-600">
+              preventivo
+            </li>
+          </Link>
           <div
             onClick={handleNav}
             className=" lg:hidden cursor-pointer absolute top-10 right-6"
