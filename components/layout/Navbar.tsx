@@ -55,7 +55,17 @@ const Navbar = () => {
                 progetti
               </ScrollLink>
             </li>
-            <li className=" ml-10 text-sm uppercase hover:border-b"></li>
+            <li className=" ml-10 text-sm uppercase hover:border-b">
+              <ScrollLink
+                to="contatti"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={200}
+              >
+                contatti
+              </ScrollLink>
+            </li>
             <div className=" px-2 flex cursor-pointer">
               <BsFacebook className=" mr-2" />
               <BsInstagram />
