@@ -3,9 +3,9 @@ import Image from "next/image";
 import { BsFacebook, BsInstagram } from "react-icons/bs";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
-import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
 import Button from "../common/Button";
+import ScrollLink from "./ScrollLink";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -22,50 +22,11 @@ const Navbar = () => {
             <Image src="/../public/logo.png" width="140" height="70" alt="/" />
           </li>
           <div className=" hidden lg:flex font-semibold">
-            <li className=" text-sm uppercase hover:border-b mr-10">
-              <ScrollLink
-                to="home"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={200}
-              >
-                home
-              </ScrollLink>
-            </li>
-            <li className=" text-sm uppercase hover:border-b">
-              <ScrollLink
-                to="chi siamo"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={200}
-              >
-                chi siamo
-              </ScrollLink>
-            </li>
-            <li className=" ml-10 text-sm uppercase hover:border-b">
-              <ScrollLink
-                to="progetti"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={200}
-              >
-                progetti
-              </ScrollLink>
-            </li>
-            <li className=" ml-10 text-sm uppercase hover:border-b">
-              <ScrollLink
-                to="contatti"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={200}
-              >
-                contatti
-              </ScrollLink>
-            </li>
+            <ScrollLink hash="home" text="home" />
+            <ScrollLink hash="chi-siamo" text="Chi Siamo" />
+            <ScrollLink hash="progetti" text="Progetti" />
+            <ScrollLink hash="contatti" text="Contatti" />
+
             <div className=" px-2 flex cursor-pointer">
               <BsFacebook className=" mr-2" />
               <BsInstagram />
