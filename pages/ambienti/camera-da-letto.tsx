@@ -1,8 +1,7 @@
 import React from "react";
-import ImageGallery, { ImageGalleryProps } from "../../components/ImageGallery";
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import PhotoGallery, { IPhoto } from "../../components/common/PhotoGallery";
 
-const camere: ImageGalleryProps[] = [
+const photos: IPhoto[] = [
   {
     title: "cucina a vista",
     text: "cucina a vista",
@@ -31,23 +30,7 @@ const camere: ImageGalleryProps[] = [
 ];
 
 const CameraDaLetto = () => {
-  return (
-    <>
-      <div className=" text-white p-5 text-xl uppercase">Camera Da Letto</div>
-      {camere.map((camera) => (
-        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
-          <Masonry>
-            <ImageGallery
-              imgUrl={camera.imgUrl}
-              linkUrl={camera.linkUrl}
-              title={camera.title}
-              text={camera.text}
-            />
-          </Masonry>
-        </ResponsiveMasonry>
-      ))}
-    </>
-  );
+  return <PhotoGallery photos={photos} title={"camera da letto"} />;
 };
 
 export default CameraDaLetto;
