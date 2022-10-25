@@ -18,15 +18,15 @@ const Navbar = () => {
     setNav(!nav);
   };
 
-  const changeBackground = () => {
-    if(window.scrollY >= 100) {
-      setNavbar(true)
-    } else {
-      setNavbar(false)
-    }
-  }
+  // const changeBackground = () => {
+  //   if(window.scrollY >= 100) {
+  //     setNavbar(true)
+  //   } else {
+  //     setNavbar(false)
+  //   }
+  // }
 
-  window.addEventListener( 'scroll', changeBackground);
+  // window.addEventListener( 'scroll', changeBackground);
 
   return (
     <>
@@ -36,8 +36,8 @@ const Navbar = () => {
             <Image src="/../public/logo.png" width="140" height="70" alt="/" />
           </li>
           <div className=" hidden lg:flex font-semibold">
-            <ScrollLink hash="home" text="home" />
-            <ScrollLink hash="chi-siamo" text="Chi Siamo" />
+            <ScrollLink hash="home" text="home"/>
+            <ScrollLink hash="chi-siamo" text="Chi Siamo"/>
             <ScrollLink hash="progetti" text="Progetti" />
             <ScrollLink hash="contatti" text="Contatti" />
 
