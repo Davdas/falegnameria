@@ -3,29 +3,59 @@ import PhotoGallery, { IPhoto } from "../../components/common/PhotoGallery";
 
 const photos: IPhoto[] = [
   {
-    title: "cucina a vista",
-    text: "cucina a vista",
-    imgUrl: "CameraDaLetto.png",
+    title: "camera da letto",
+    text: "camera da letto",
+    imgUrl: "cameraDaLetto/camera1.png",
   },
   {
-    title: "cucina a vista",
-    text: "cucina a vista",
-    imgUrl: "ArredoBagno.png",
+    title: "camera da letto",
+    text: "camera da letto",
+    imgUrl: "cameraDaLetto/camera2.png",
   },
   {
-    title: "cucina a vista",
-    text: "cucina a vista",
-    imgUrl: "librerie.png",
+    title: "camera da letto",
+    text: "camera da letto",
+    imgUrl: "cameraDaLetto/camera3.png",
   },
   {
-    title: "cucina a vista",
-    text: "cucina a vista",
-    imgUrl: "CameraDaLetto.png",
+    title: "camera da letto",
+    text: "camera da letto",
+    imgUrl: "cameraDaLetto/camera4.png",
   },
   {
-    title: "cucina a vista",
-    text: "cucina a vista",
-    imgUrl: "CameraDaLetto.png",
+    title: "camera da letto",
+    text: "camera da letto",
+    imgUrl: "cameraDaLetto/camera5.png",
+  },
+  {
+    title: "camera da letto",
+    text: "camera da letto",
+    imgUrl: "cameraDaLetto/camera6.png",
+  },
+  {
+    title: "camera da letto",
+    text: "camera da letto",
+    imgUrl: "cameraDaLetto/camera7.png",
+  },
+  {
+    title: "camera da letto",
+    text: "camera da letto",
+    imgUrl: "cameraDaLetto/camera8.png",
+  },
+  {
+    title: "camera da letto",
+    text: "camera da letto",
+    imgUrl: "cameraDaLetto/camera9.png",
+  },
+  {
+    title: "camera da letto",
+    text: "camera da letto",
+    imgUrl: "cameraDaLetto/camera10.png",
+  },
+  {
+    title: "camera da letto",
+    text: "camera da letto",
+    imgUrl: "cameraDaLetto/camera11.png",
   },
 ];
 

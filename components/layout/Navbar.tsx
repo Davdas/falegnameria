@@ -7,37 +7,40 @@ import Link from "next/link";
 import Button from "../common/Button";
 import ScrollLink from "./ScrollLink";
 
-
-
 const Navbar = () => {
-
   const [nav, setNav] = useState(false);
-  const [navbar, setNavbar] = useState (false)
+  const [navbar, setNavbar] = useState(false);
 
   const handleNav = () => {
     setNav(!nav);
   };
 
   // const changeBackground = () => {
-  //   if(window.scrollY >= 100) {
-  //     setNavbar(true)
+  //   if (window.scrollY >= 300) {
+  //     setNavbar(true);
   //   } else {
-  //     setNavbar(false)
+  //     setNavbar(false);
   //   }
-  // }
+  // };
 
-  // window.addEventListener( 'scroll', changeBackground);
+  // window.addEventListener("scroll", changeBackground);
 
   return (
     <>
-      <nav className={ navbar ? "fixed top-0 right-0 w-full z-50 bg-stone-600" : "fixed top-0 right-0 w-full z-50"}>
+      <nav
+        className={
+          navbar
+            ? "fixed top-0 right-0 w-full z-50 bg-stone-600/80"
+            : "fixed top-0 right-0 w-full z-50"
+        }
+      >
         <ul className=" md:flex max-w-7xl m-auto text-white items-center justify-between p-2">
           <li className=" cursor-pointer">
             <Image src="/../public/logo.png" width="140" height="70" alt="/" />
           </li>
           <div className=" hidden lg:flex font-semibold">
-            <ScrollLink hash="home" text="home"/>
-            <ScrollLink hash="chi-siamo" text="Chi Siamo"/>
+            <ScrollLink hash="home" text="home" />
+            <ScrollLink hash="chi-siamo" text="Chi Siamo" />
             <ScrollLink hash="progetti" text="Progetti" />
             <ScrollLink hash="contatti" text="Contatti" />
 

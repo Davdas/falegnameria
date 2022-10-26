@@ -62,16 +62,20 @@ const photos: IPhoto[] = [
     text: "armadio",
     imgUrl: "armadi/armadio12.jpg",
   },
-
-  
- 
-
+  {
+    title: "armadio",
+    text: "armadio",
+    imgUrl: "armadi/armadio13.jpg",
+  },
+  {
+    title: "armadio",
+    text: "armadio",
+    imgUrl: "armadi/armadio14.jpg",
+  },
 ];
 
-const CucinaAVista = () => {
+const Armadi = () => {
   return <PhotoGallery photos={photos} title={"Armadi e Librerie"} />;
 };
 
-export default CucinaAVista;
-
-
+export default Armadi;

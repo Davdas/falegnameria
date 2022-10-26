@@ -7,22 +7,22 @@ const progetti: ProjectCardProps[] = [
   {
     imgUrl: "cucina.png",
     index: "01",
-    linkUrl: "/ambienti/cucina-a-vista",
-    title: " Cucina a vista",
+    linkUrl: "/ambienti/cucine",
+    title: " Cucine",
     text: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati nobis nostrum exercitationem accusantium blanditiis",
   },
   {
     imgUrl: "CameraDaLetto.png",
     index: "02",
     linkUrl: "/ambienti/camera-da-letto",
-    title: " Camera da letto",
+    title: " Camere da letto",
     text: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati nobis nostrum exercitationem accusantium blanditiis",
   },
   {
-    imgUrl: "librerie.png",
+    imgUrl: "armadio.png",
     index: "03",
-    linkUrl: "/ambienti/librerie",
-    title: "Libreria",
+    linkUrl: "/ambienti/armadio",
+    title: "Armadi e Librerie",
     text: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati nobis nostrum exercitationem accusantium blanditiis",
   },
   {
@@ -33,17 +33,17 @@ const progetti: ProjectCardProps[] = [
     text: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati nobis nostrum exercitationem accusantium blanditiis",
   },
   {
-    imgUrl: "Armadio.png",
+    imgUrl: "console.png",
     index: "05",
-    linkUrl: "/ambienti/armadio",
-    title: "Armadi",
+    linkUrl: "/ambienti/console",
+    title: "Console e Copri Termosifoni",
     text: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati nobis nostrum exercitationem accusantium blanditiis",
   },
   {
     imgUrl: "Porte.png",
     index: "06",
     linkUrl: "/ambienti/porte",
-    title: "Porte e pareti",
+    title: "Porte",
     text: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati nobis nostrum exercitationem accusantium blanditiis",
   },
 ];
@@ -51,10 +51,12 @@ const progetti: ProjectCardProps[] = [
 const Progetti = () => {
   return (
     <>
-      <section id="progetti" className=" my-28">
-        <h1 className=" text-white font-semibold uppercase text-2xl tracking-wide text-center mb-12 lg:text-4xl md:mb-20">
+      <section id="progetti" className=" my-48">
+        <hr className="w-[12%] border-1 border-amber-600 my-4 mb-5 ml-5 xl:ml-24" />
+        <h1 className=" text-white font-semibold uppercase p-4 tracking-wide text-3xl sm:text-2xl ml-5 xl:ml-24">
           i nostri progetti
         </h1>
+        <hr className="w-[25%] border-1 border-amber-600 my-4 mb-20 ml-5 xl:ml-24" />
 
         <div className=" lg:grid-cols-3 md:grid grid-cols-2 mx-4 gap-6 items-center xl:mx-20 m-auto">
           {progetti.map((progetto) => (
