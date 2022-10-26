@@ -6,7 +6,7 @@ import { Link as ScrollLink } from "react-scroll";
 const Footer = () => {
   return (
     <>
-      <hr className="w-[100%] border-1 border-white" />
+      <hr className="w-[100%] border-1 border-amber-600" />
       <div
         className=" flex justify-around items-center w-full h-[400px] p-5 text-center"
         id="contatti"

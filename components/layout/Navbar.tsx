@@ -10,10 +10,13 @@ import ScrollLink from "./ScrollLink";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [navbar, setNavbar] = useState(false);
+  const [click, setClick] = useState(false);
 
   const handleNav = () => {
     setNav(!nav);
   };
+
+  const closeMenu = () => setClick(false);
 
   // const changeBackground = () => {
   //   if (window.scrollY >= 300) {
@@ -71,7 +74,7 @@ const Navbar = () => {
           <div
             className={
               nav
-                ? " fixed top-0 left-0 w-[75%] sm:w-[64%] md:w-[45%] h-screen bg-white p-4 ease-in duration-300"
+                ? " fixed top-0 left-0 w-[75%] sm:w-[64%] md:w-[45%] h-screen bg-black/90 p-4 ease-in duration-300"
                 : " fixed top-[0] left-[-200%] p-4 ease-in duration-300"
             }
           >
@@ -82,31 +85,40 @@ const Navbar = () => {
                 height="55"
                 alt="/"
               />
-              <div onClick={handleNav} className=" cursor-pointer text-black">
+              <div
+                onClick={handleNav}
+                className=" cursor-pointer text-stone-200"
+              >
                 <AiOutlineClose size={25} />
               </div>
             </div>
-            <div className="border-b border-stone-700 my-4 py-2 text-center">
-              <p className=" text-stone-700 capitalize py-2 font-semibold text-lg">
+            <div className="border-b border-amber-600 my-8 py-5 text-center">
+              <p className=" text-stone-200 capitalize py-2 text-xl">
                 creiamo arredamenti su misura per la tua casa
               </p>
             </div>
-            <div className=" flex flex-col mt-2">
-              <ul className=" uppercase text-black text-sm text-center font-semibold">
-                <li className=" my-8">chi siamo</li>
-                <li className=" my-8">progetti</li>
+            <div className=" flex flex-col mt-10">
+              <ul className=" uppercase text-stone-200 text-sm text-center font-semibold">
+                <li className=" my-8" onClick={closeMenu}>
+                  chi siamo
+                </li>
+                <li className=" my-8" onClick={closeMenu}>
+                  progetti
+                </li>
                 <li className=" my-8">contatti</li>
                 <li className=" my-8">canali social</li>
                 <div className=" flex justify-center cursor-pointer">
-                  <BsFacebook className=" mr-2 text-stone-700" size={18} />
-                  <BsInstagram className=" text-stone-700" size={18} />
+                  <BsFacebook className=" mr-2 text-stone-400" size={18} />
+                  <BsInstagram className=" text-stone-400" size={18} />
                 </div>
-                <li className=" text-black font-semibold my-8">preventivo</li>
+                <li className=" text-stone-200 font-semibold my-8">
+                  preventivo
+                </li>
               </ul>
               <div className=" text-center">
                 <Button
                   text="Scopri di piu"
-                  className="text-black font-semibold"
+                  className="text-stone-300 font-semibold"
                 />
               </div>
             </div>
