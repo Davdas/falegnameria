@@ -1,5 +1,6 @@
 import { url } from "inspector";
 import React from "react";
+import { Link } from "react-scroll";
 import Button from "../../components/common/Button";
 
 const HeroSection = () => {
@@ -18,7 +19,9 @@ const HeroSection = () => {
         <h2 className=" text-white lg:text-3xl md:text-2xl text-xl tracking-wide capitalize mb-4">
           creiamo arredamenti su misura
         </h2>
-        <Button text="Scopri di piu" onClick={() => alert("FIX THIS")} />
+        <Link to="progetti">
+          <Button text="Scopri di piu" />
+        </Link>
       </div>
     </main>
   );

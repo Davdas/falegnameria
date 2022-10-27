@@ -9,14 +9,14 @@ import ScrollLink from "./ScrollLink";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const [navbar, setNavbar] = useState(false);
-  const [click, setClick] = useState(false);
 
   const handleNav = () => {
     setNav(!nav);
   };
 
-  const closeMenu = () => setClick(false);
+  const closeMenu = () => {
+    setNav(false);
+  };
 
   // const changeBackground = () => {
   //   if (window.scrollY >= 300) {
@@ -30,13 +30,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav
-        className={
-          navbar
-            ? "fixed top-0 right-0 w-full z-50 bg-stone-600/80"
-            : "fixed top-0 right-0 w-full z-50"
-        }
-      >
+      <nav className="fixed top-0 right-0 w-full z-50">
         <ul className=" md:flex max-w-7xl m-auto text-white items-center justify-between p-2">
           <li className=" cursor-pointer">
             <Image src="/../public/logo.png" width="140" height="70" alt="/" />
@@ -99,21 +93,23 @@ const Navbar = () => {
             </div>
             <div className=" flex flex-col mt-10">
               <ul className=" uppercase text-stone-200 text-sm text-center font-semibold">
-                <li className=" my-8" onClick={closeMenu}>
-                  chi siamo
+                <li className=" my-8 mr-10" onClick={closeMenu}>
+                  <ScrollLink hash="home" text="home" />
                 </li>
-                <li className=" my-8" onClick={closeMenu}>
-                  progetti
+                <li className=" my-8 mr-10" onClick={closeMenu}>
+                  <ScrollLink hash="chi-siamo" text="chi siamo" />
                 </li>
-                <li className=" my-8">contatti</li>
-                <li className=" my-8">canali social</li>
+                <li className=" my-8 mr-10" onClick={closeMenu}>
+                  <ScrollLink hash="progetti" text="progetti" />
+                </li>
+                <li className=" my-8 mr-10" onClick={closeMenu}>
+                  <ScrollLink hash="contatti" text="contatti" />
+                </li>
                 <div className=" flex justify-center cursor-pointer">
                   <BsFacebook className=" mr-2 text-stone-400" size={18} />
                   <BsInstagram className=" text-stone-400" size={18} />
                 </div>
-                <li className=" text-stone-200 font-semibold my-8">
-                  preventivo
-                </li>
+                <li className=" text-stone-200 font-semibold my-8"></li>
               </ul>
               <div className=" text-center">
                 <Button

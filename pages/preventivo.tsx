@@ -1,7 +1,7 @@
 import React from "react";
 
-const preventivo = () => {
-  return <div>preventivo</div>;
+const Preventivo = () => {
+  return <div>richiedi preventivo</div>;
 };
 
-export default preventivo;
+export default Preventivo;

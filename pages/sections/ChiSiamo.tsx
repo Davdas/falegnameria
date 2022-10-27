@@ -38,9 +38,3 @@ const ChiSiamo = () => {
 };
 
 export default ChiSiamo;
-
-{
-  /* <div className=" w-full h-auto m-auto shadow-lg shadow-white flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 cursor-pointer">
-          <img className=" rounded-xl" src="./ChiSiamo .png" alt="/" />
-    </div> */
-}
