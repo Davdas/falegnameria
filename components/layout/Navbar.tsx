@@ -4,7 +4,6 @@ import { BsFacebook, BsInstagram } from "react-icons/bs";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import Link from "next/link";
-import Button from "../common/Button";
 import ScrollLink from "./ScrollLink";
 
 const Navbar = () => {
@@ -20,9 +19,9 @@ const Navbar = () => {
 
   // const changeBackground = () => {
   //   if (window.scrollY >= 300) {
-  //     setNavbar(true);
+  //     setNav(true);
   //   } else {
-  //     setNavbar(false);
+  //     setNav(false);
   //   }
   // };
 
@@ -30,7 +29,13 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 right-0 w-full z-50">
+      <nav
+        className={
+          nav
+            ? "fixed top-0 right-0 w-full z-50 bg-slate-500"
+            : "fixed top-0 right-0 w-full z-50"
+        }
+      >
         <ul className=" md:flex max-w-7xl m-auto text-white items-center justify-between p-2">
           <li className=" cursor-pointer">
             <Image src="/../public/logo.png" width="140" height="70" alt="/" />
@@ -42,8 +47,12 @@ const Navbar = () => {
             <ScrollLink hash="contatti" text="Contatti" />
 
             <div className=" px-2 flex cursor-pointer">
-              <BsFacebook className=" mr-2" />
-              <BsInstagram />
+              <a href="https://www.facebook.com" target="_blank">
+                <BsFacebook className=" mr-2" />
+              </a>
+              <a href="https://www.instagram.com/" target="_blank">
+                <BsInstagram />
+              </a>
             </div>
           </div>
           <Link href="/preventivo">
@@ -68,7 +77,7 @@ const Navbar = () => {
           <div
             className={
               nav
-                ? " fixed top-0 left-0 w-[75%] sm:w-[64%] md:w-[45%] h-screen bg-black/90 p-4 ease-in duration-300"
+                ? " fixed top-0 left-0 w-[75%] sm:w-[64%] md:w-[45%] h-screen bg-black/80 p-4 ease-in duration-300"
                 : " fixed top-[0] left-[-200%] p-4 ease-in duration-300"
             }
           >
@@ -110,13 +119,18 @@ const Navbar = () => {
                   <BsInstagram className=" text-stone-400" size={18} />
                 </div>
                 <li className=" text-stone-200 font-semibold my-8"></li>
+                <li className=" my-8 mr-10 text-white" onClick={closeMenu}>
+                  <ScrollLink hash="progetti" text="scopri di piu" />
+                </li>
+                <Link href="/preventivo">
+                  <li
+                    className=" lg:flex border border-white text-sm rounded-sm uppercase px-5 py-2 font-semibold hover:bg-stone-600 w-[50%] mx-auto"
+                    onClick={closeMenu}
+                  >
+                    preventivo
+                  </li>
+                </Link>
               </ul>
-              <div className=" text-center">
-                <Button
-                  text="Scopri di piu"
-                  className="text-stone-300 font-semibold"
-                />
-              </div>
             </div>
           </div>
         </div>
