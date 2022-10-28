@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { BsFacebook, BsInstagram } from "react-icons/bs";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import Link from "next/link";
 import ScrollLink from "./ScrollLink";
+import { useScrollPosition } from "../customHook/useScrollNavbar";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -17,22 +18,15 @@ const Navbar = () => {
     setNav(false);
   };
 
-  // const changeBackground = () => {
-  //   if (window.scrollY >= 300) {
-  //     setNav(true);
-  //   } else {
-  //     setNav(false);
-  //   }
-  // };
-
-  // window.addEventListener("scroll", changeBackground);
+  const navbarScroll = useScrollPosition();
+  console.log(navbarScroll);
 
   return (
     <>
       <nav
         className={
-          nav
-            ? "fixed top-0 right-0 w-full z-50 bg-slate-500"
+          navbarScroll
+            ? "fixed top-0 right-0 w-full z-50 bg-black/80"
             : "fixed top-0 right-0 w-full z-50"
         }
       >
