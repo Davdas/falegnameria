@@ -1,4 +1,3 @@
-import React from "react";
 import PhotoGallery, { IPhoto } from "../../components/common/PhotoGallery";
 
 const photos: IPhoto[] = [
@@ -91,7 +90,11 @@ const photos: IPhoto[] = [
 ];
 
 const Cucina = () => {
-  return <PhotoGallery photos={photos} title={"cucina"} />;
+  return (
+    <>
+      <PhotoGallery photos={photos} title={"cucina"} />
+    </>
+  );
 };
 
 export default Cucina;

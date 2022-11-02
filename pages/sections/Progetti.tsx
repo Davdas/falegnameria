@@ -51,11 +51,14 @@ const progetti: ProjectCardProps[] = [
 const Progetti = () => {
   return (
     <>
-      <section id="progetti" className=" my-48">
-        <hr className="w-[12%] border-1 border-amber-600 my-4 mb-5 ml-5 xl:ml-24" />
-        <h1 className=" text-white font-semibold uppercase p-4 tracking-wide text-3xl sm:text-2xl ml-5 xl:ml-24">
+      <section id="progetti" className=" my-20 mb-48">
+        <hr className="w-[15%] border-1 border-amber-600 my-4 mb-5 ml-5 xl:ml-24 " />
+        <h2 className=" text-white font-semibold uppercase p-4 tracking-wide text-3xl sm:text-4xl ml-5 xl:ml-24">
+          cosa facciamo
+        </h2>
+        <h3 className=" text-white font-semibold uppercase p-4 tracking-wide text-xl sm:text-2xl ml-5 xl:ml-24">
           i nostri progetti
-        </h1>
+        </h3>
         <hr className="w-[25%] border-1 border-amber-600 my-4 mb-20 ml-5 xl:ml-24" />
 
         <div className=" lg:grid-cols-3 md:grid grid-cols-2 mx-4 gap-6 items-center xl:mx-20 m-auto">

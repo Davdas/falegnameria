@@ -3,7 +3,7 @@ import React from "react";
 const ChiSiamo = () => {
   return (
     <>
-      <section id="chi-siamo" className=" my-20 lg:my-48 w-full">
+      <section id="chi-siamo" className=" mt-20 lg:my-48 w-full">
         <div className=" md:grid grid-cols-2 gap-2 items-center m-auto xl:px-24 px-4">
           <div className=" text-white md:m-auto">
             <hr className="w-[25%] border-1 border-amber-600 my-4" />

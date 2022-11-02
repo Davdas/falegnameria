@@ -26,7 +26,7 @@ const Navbar = () => {
       <nav
         className={
           navbarScroll
-            ? "fixed top-0 right-0 w-full z-50 bg-black/80"
+            ? "fixed top-0 right-0 w-full z-50 bg-stone-500/90"
             : "fixed top-0 right-0 w-full z-50"
         }
       >
