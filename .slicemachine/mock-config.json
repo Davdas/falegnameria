@@ -1,0 +1,12 @@
+{
+  "_cts": {
+    "ambienti": {}
+  },
+  "slices": {
+    "Immagini": {
+      "default": {
+        "primary": {}
+      }
+    }
+  }
+}

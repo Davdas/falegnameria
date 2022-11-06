@@ -19,20 +19,19 @@ const Navbar = () => {
   };
 
   const navbarScroll = useScrollPosition();
-  console.log(navbarScroll);
 
   return (
     <>
       <nav
         className={
           navbarScroll
-            ? "fixed top-0 right-0 w-full z-50 bg-zinc-900/90 shadow-gray-500 shadow-md"
-            : "fixed top-0 right-0 w-full z-50"
+            ? "fixed top-0 right-0 w-full z-20 bg-zinc-900/90 shadow-gray-500 shadow-md"
+            : "fixed top-0 right-0 w-full z-20"
         }
       >
         <ul className=" md:flex max-w-7xl m-auto text-white items-center justify-between p-2 mx-3">
           <li className=" cursor-pointer">
-            <Image src="/../public/logo.png" width="140" height="70" alt="/"/>
+            <Image src="/../public/logo.png" width="140" height="70" alt="/" />
           </li>
           <div className=" hidden lg:flex font-semibold">
             <ScrollLink hash="home" text="home" />
