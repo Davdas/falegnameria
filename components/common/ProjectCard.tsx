@@ -6,6 +6,8 @@ export interface ProjectCardProps {
   imgUrl: string;
   title: string;
   text: string;
+  text1: string;
+  text2: string;
   linkUrl: string;
 }
 
@@ -14,26 +16,28 @@ const ProjectCard = ({
   imgUrl,
   title,
   text,
+  text1,
+  text2,
   linkUrl,
 }: ProjectCardProps) => {
   return (
     <Link href={linkUrl}>
-      <div className="cursor-pointer w-full h-full relative shadow-md sm:hover:scale-[102%] ease-in duration-200 p-4 mr-4 rounded-md bg-neutral-900 mt-4">
-        {/* Index */}
-        <span className=" text-7xl text-amber-600 absolute top-[-25px] right-[-10px] italic md:left-[20px]">
-          {index}
-        </span>
-
+      <div className="cursor-pointer w-full h-full relative shadow-md sm:hover:scale-[102%] ease-in duration-200 p-4 mr-4 rounded-md shadow-gray-500 bg-zinc-900 mt-4">
         <div
           className={`w-full min-h-[300px] bg-cover bg-center `}
           style={{ backgroundImage: `url(/${imgUrl})` }}
         />
 
-        <div className=" p-4">
+        <div className=" p-4 mt-5">
           <h2 className=" text-amber-600 uppercase tracking-wide text-3xl mt-3">
             {title}
           </h2>
-          <p className=" text-white italic">{text}</p>
+          <div className=" mt-5">
+               <p className=" text-white italic mb-2">{text}</p>
+               <p className=" text-white italic mb-2">{text1}</p>
+               <p className=" text-white italic mb-2">{text2}</p>
+          </div>
+       
         </div>
       </div>
     </Link>

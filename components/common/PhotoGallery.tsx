@@ -1,5 +1,5 @@
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-import { ScrollLink } from "react-scroll";
+import {BsArrowLeftShort} from "react-icons/bs"
 
 export interface IPhoto {
   title: string;
@@ -15,12 +15,15 @@ interface IPhotoGalleryProps {
 const PhotoGallery = ({ photos, title }: IPhotoGalleryProps) => {
   return (
     <section className=" max-w-[1000px] mx-auto mt-40">
-      <div className=" text-white py-5 text-4xl uppercase tracking-wider ml-5">
+    <div className=" text-white py-5 text-4xl text-center uppercase tracking-wider ml-5">
         {title}
+        <hr className="w-[25%] border-1 border-amber-600 my-4 mb-3 m-auto" />
       </div>
-      <a href="/#progetti" className="text-white ml-3">
-        torna indietro
-      </a>
+      <div className=" flex ml-2">
+      <BsArrowLeftShort className=" text-2xl text-white"/>
+        <a href="/#progetti" className="text-white">indietro</a>
+      </div>
+      
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
         <Masonry gutter="15px" className=" p-3">
           {photos.map((photo) => (

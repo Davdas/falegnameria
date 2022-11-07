@@ -15,8 +15,8 @@ const HeroSection = () => {
         <h1 className=" text-amber-600 lg:text-6xl md:text-5xl sm:text-4xl text-3xl uppercase tracking-wider font-semibold mb-2">
           mancini falegnameria
         </h1>
-        <h2 className=" text-white lg:text-3xl md:text-2xl text-xl tracking-wide capitalize mb-4">
-          creiamo arredamenti su misura
+        <h2 className=" text-white lg:text-3xl md:text-2xl text-xl tracking-wide mb-4 uppercase">
+          arrediamo le tue idee
         </h2>
         <Link to="progetti">
           <Button text="Scopri di piu" />

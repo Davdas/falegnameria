@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { BsFacebook, BsInstagram } from "react-icons/bs";
 import { BiMenuAltRight } from "react-icons/bi";
@@ -26,13 +26,13 @@ const Navbar = () => {
       <nav
         className={
           navbarScroll
-            ? "fixed top-0 right-0 w-full z-50 bg-stone-500/90"
+            ? "fixed top-0 right-0 w-full z-50 bg-zinc-900/90 shadow-gray-500 shadow-md"
             : "fixed top-0 right-0 w-full z-50"
         }
       >
-        <ul className=" md:flex max-w-7xl m-auto text-white items-center justify-between p-2">
+        <ul className=" md:flex max-w-7xl m-auto text-white items-center justify-between p-2 mx-3">
           <li className=" cursor-pointer">
-            <Image src="/../public/logo.png" width="140" height="70" alt="/" />
+            <Image src="/../public/logo.png" width="140" height="70" alt="/"/>
           </li>
           <div className=" hidden lg:flex font-semibold">
             <ScrollLink hash="home" text="home" />
@@ -50,7 +50,7 @@ const Navbar = () => {
             </div>
           </div>
           <Link href="/preventivo">
-            <li className=" hidden lg:flex border border-white text-sm rounded-sm uppercase px-5 py-2 font-semibold hover:bg-stone-600">
+            <li className=" hidden lg:flex border border-amber-600 text-sm rounded-sm uppercase px-5 py-2 font-semibold hover:bg-stone-600">
               preventivo
             </li>
           </Link>

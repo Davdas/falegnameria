@@ -1,4 +1,6 @@
 import React from "react";
+import { BsArrowLeftShort } from "react-icons/bs";
+import Button from "../components/common/Button";
 
 const Preventivo = () => {
   const handleOnSubmit = (e: any) => {
@@ -6,9 +8,14 @@ const Preventivo = () => {
   };
   return (
     <>
+    
       <form action="" method="post" onSubmit={handleOnSubmit}>
-        <div className=" w-[80%] h-[500px] flex flex-col p-5 text-center bg-orange-300 m-auto mt-40 lg:w-[60%] rounded-md shadow-md shadow-white">
-          <h2 className=" text-black font-semibold md:text-xl text-lg mt-10">
+        <div className=" w-[80%] h-[500px] flex flex-col p-5 text-center bg-zinc-900 m-auto mt-40 lg:w-[60%] rounded-md shadow-md shadow-white">
+        <div className=" flex ml-2">
+      <BsArrowLeftShort className=" text-2xl text-white"/>
+        <a href="/#progetti" className="text-white">indietro</a>
+      </div>
+          <h2 className=" text-white font-semibold md:text-xl text-lg mb-10">
             Richiedi Preventivo
           </h2>
           <div className="mb-2">
@@ -18,7 +25,7 @@ const Preventivo = () => {
                 id="name"
                 name="name"
                 placeholder="Nome"
-                className=" p-2 rounded-sm lg:w-[70%] w-[80%]"
+                className=" p-2 rounded-sm lg:w-[70%] w-[80%] mb-2"
                 required
               />
             </label>
@@ -30,7 +37,7 @@ const Preventivo = () => {
                 id="surname"
                 name="surname"
                 placeholder="Cognome"
-                className=" p-2 rounded-sm lg:w-[70%] w-[80%]"
+                className=" p-2 rounded-sm lg:w-[70%] w-[80%] mb-2"
                 required
               />
             </label>
@@ -41,12 +48,12 @@ const Preventivo = () => {
                 type="text"
                 name="email"
                 placeholder="Email"
-                className=" p-2 rounded-sm lg:w-[70%] w-[80%]"
+                className=" p-2 rounded-sm lg:w-[70%] w-[80%] mb-2"
                 required
               />
             </label>
           </div>
-          <div className="mb-2">
+          <div>
             <textarea
               className="text-black rounded-sm p-3 lg:w-[70%] w-[80%]"
               rows={5}
@@ -56,9 +63,7 @@ const Preventivo = () => {
             ></textarea>
           </div>
           <div className=" flex justify-center">
-            <button className=" bg-white px-6 py-2 rounded-sm font-semibold uppercase text-sm">
-              submit
-            </button>
+             <Button text="invia" className=" w-[15%]"/>
           </div>
         </div>
       </form>

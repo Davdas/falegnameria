@@ -60,7 +60,7 @@ const photos: IPhoto[] = [
 ];
 
 const CameraDaLetto = () => {
-  return <PhotoGallery photos={photos} title={"camera da letto"} />;
+  return <PhotoGallery photos={photos} title={"letti"} />;
 };
 
 export default CameraDaLetto;

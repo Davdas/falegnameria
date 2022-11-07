@@ -92,7 +92,7 @@ const photos: IPhoto[] = [
 const Cucina = () => {
   return (
     <>
-      <PhotoGallery photos={photos} title={"cucina"} />
+      <PhotoGallery photos={photos} title={"cucine"} />
     </>
   );
 };

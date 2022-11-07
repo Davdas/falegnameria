@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import { BsFacebook, BsInstagram } from "react-icons/bs";
+import { BsFacebook, BsFillTelephoneForwardFill, BsInstagram } from "react-icons/bs";
 import { Link as ScrollLink } from "react-scroll";
+import { AiOutlineMail } from "react-icons/ai"
 
 const Footer = () => {
   return (
@@ -27,9 +28,18 @@ const Footer = () => {
           <h3>richiedi preventivo</h3>
         </div>
         <div className="text-white lg:mb-2 mb-10">
-          <h2 className="  lg:text-lg text-md uppercase">Contatti</h2>
-          <h3 className=" mb-2">Email : falegnameri@gmail.com</h3>
-          <h3>Telefono : 333/555 555 555</h3>
+          <h2 className="  lg:text-lg text-md uppercase mb-2">Contatti</h2>
+          <div className=" flex">
+             <AiOutlineMail className=" mt-1"/>
+             <h3 className=" ml-2 mb-2">lab.mancinifalegnameria@gmail.com</h3>
+          </div>
+          <div className=" flex flex-col">
+               <BsFillTelephoneForwardFill className=" mt-3"/>
+               <span>340/6408332</span><br />
+               <BsFillTelephoneForwardFill />
+               <span>328/7020426</span><br />
+          </div>
+         
         </div>
         <div className="text-white text-center">
           <h2 className=" lg:text-lg text-md mb-2 uppercase">
@@ -38,7 +48,6 @@ const Footer = () => {
           <div className="flex justify-center flex-col">
             <h2 className=" text-center">Seguici sui nostri social</h2>
             <div className=" flex justify-center p-2">
-              <h2 className=" text-center">Canali social</h2>
               <BsFacebook className="ml-2 cursor-pointer" size={18} />
               <BsInstagram className="ml-2 cursor-pointer" size={18} />
             </div>

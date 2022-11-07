@@ -10,22 +10,14 @@ const ChiSiamo = () => {
             <h1 className=" text-white font-semibold uppercase p-4 text-2xl tracking-wide lg:text-3xl">
               artigiani del legno
             </h1>
+            <h2 className=" text-lg mb-3 uppercase">Sviluppiamo e Realizziamo i tuoi progetti su misura</h2>
             <div className=" tracking-wide italic text-stone-200">
               <p className=" my:mb-10 text-sm font-light">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Cupiditate dolor laborum odio. Consequatur ipsa dolorum sint!
-                Doloremque sit tenetur numquam tempore, libero veritatis, ipsa
-                ex.
+           Siamo due artigiani, Danilo e Claudio, che spinti dalla passione e l'amore per il proprio lavoro, nel 2014 decidono di unire le loro competenze dando vita alla <span className=" text-lg text-amber-600">ManciniFalegnameria.</span> 
               </p>
               <br />
               <p className=" md:mb-10 text-sm font-light">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Cupiditate dolor laborum odio. Consequatur ipsa dolorum sint!
-                Doloremque sit tenetur numquam tempore, libero veritatis, ipsa
-                ex. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Cupiditate dolor laborum odio. Consequatur ipsa dolorum sint!
-                Doloremque sit tenetur numquam tempore, libero veritatis, ipsa
-                ex.
+               Siamo una piccola realta' romana che in pochi anni si e'fatta conoscere e apprezzare per la professionalita' e qualita' che mettiamo nella realizzazione dei nostri lavori.
               </p>
               <hr className="w-[55%] border-1 border-amber-600 my-5" />
             </div>
