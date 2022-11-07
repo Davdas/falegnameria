@@ -18,7 +18,7 @@ const ChiSiamo = () => {
                 Siamo due artigiani, Danilo e Claudio, che spinti dalla passione
                 e l'amore per il proprio lavoro, nel 2014 decidono di unire le
                 loro competenze dando vita alla
-                <span className=" text-lg text-amber-600">
+                <span className=" text-lg text-amber-600 ml-2">
                   ManciniFalegnameria.
                 </span>
               </p>
