@@ -29,8 +29,8 @@ const Navbar = () => {
             : "fixed top-0 right-0 w-full z-20"
         }
       >
-        <ul className=" md:flex max-w-7xl m-auto text-white items-center justify-between p-2 mx-3">
-          <li className=" cursor-pointer">
+        <ul className=" md:flex max-w-7xl m-auto text-white items-center justify-between mt-5 mb-3 lg:justify-around">
+          <li className=" cursor-pointer ml-5">
             <Image src="/../public/logo.png" width="140" height="70" alt="/" />
           </li>
           <div className=" hidden lg:flex font-semibold">
@@ -49,7 +49,7 @@ const Navbar = () => {
             </div>
           </div>
           <Link href="/preventivo">
-            <li className=" hidden lg:flex border border-amber-600 text-sm rounded-sm uppercase px-5 py-2 font-semibold hover:bg-stone-600">
+            <li className=" hidden lg:flex border border-amber-600 text-sm rounded-sm uppercase px-3 py-2 font-semibold hover:bg-stone-600">
               preventivo
             </li>
           </Link>
@@ -112,12 +112,12 @@ const Navbar = () => {
                   <BsInstagram className=" text-stone-400" size={18} />
                 </div>
                 <li className=" text-stone-200 font-semibold my-8"></li>
-                <li className=" my-8 mr-10 text-white" onClick={closeMenu}>
+                <li className=" my-8 mr-10 text-amber-600" onClick={closeMenu}>
                   <ScrollLink hash="progetti" text="scopri di piu" />
                 </li>
                 <Link href="/preventivo">
                   <li
-                    className=" lg:flex border border-white text-sm rounded-sm uppercase px-5 py-2 font-semibold hover:bg-stone-600 w-[50%] mx-auto"
+                    className=" lg:flex border border-white text-sm rounded-sm uppercase px-3 py-2 font-semibold hover:bg-stone-600 w-[50%] mx-auto"
                     onClick={closeMenu}
                   >
                     preventivo

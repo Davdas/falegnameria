@@ -9,7 +9,7 @@ const progetti: ProjectCardProps[] = [
     index: "01",
     linkUrl: "/ambienti/cucine",
     title: " Cucine",
-    text: "Cucine su misura di altissima qualita'", 
+    text: "Cucine su misura di altissima qualita'",
     text1: "Personalizzazione di materiali finiture e colori",
     text2: "Cucine su misura per te",
   },
@@ -44,7 +44,7 @@ const progetti: ProjectCardProps[] = [
     imgUrl: "console.png",
     index: "05",
     linkUrl: "/ambienti/console",
-    title: "Console e Copri Termosifoni",
+    title: "Consolle e Copri Termosifoni",
     text: "Sono i veri accessori della casa",
     text1: "Funzionali e dal design innovativo",
     text2: "Accessori su misura per te",
@@ -64,14 +64,15 @@ const Progetti = () => {
   return (
     <>
       <section id="progetti" className=" my-20 mb-48">
-        <hr className="w-[30%] border-1 border-amber-600 my-4 mb-3 m-auto" />
+        <hr className="w-[20%] border-1 border-amber-600 my-4 mb-3 m-auto" />
         <h2 className=" text-white text-center font-semibold uppercase p-2 tracking-wide text-3xl sm:text-4xl">
           cosa facciamo
         </h2>
         <h3 className=" text-white text-center p-2 tracking-wide text-md sm:text-xl">
-          Diamo ai nostri lavori l'originalita' che solo un prodotto artigianale puo' avere
+          Diamo ai nostri lavori l'originalita' che solo un prodotto artigianale
+          puo' avere
         </h3>
-        <hr className="w-[85%] border-1 border-amber-600 my-2 mb-20 ml-5 xl:ml-24" />
+        <hr className="w-[90%] border-1 mx-auto border-amber-600 my-2 mb-20 xl:ml-24" />
 
         <div className=" lg:grid-cols-3 md:grid grid-cols-2 mx-4 gap-6 items-center xl:mx-20 m-auto">
           {progetti.map((progetto) => (

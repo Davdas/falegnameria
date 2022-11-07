@@ -36,16 +36,16 @@ const PhotoGallery = ({ photos }: IPhotoGalleryProps) => {
   return (
     <>
       {showModal && selectedPhotoIndex !== undefined && (
-        <div className="fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-70 flex items-center justify-center">
+        <div className="fixed top-[50px] left-0 right-0 w-full mx-auto h-full bg-black bg-opacity-70 flex items-center justify-center">
           <div
-            className="fixed top-[100px] right-[100px] z-30 cursor-pointer"
+            className="fixed top-[120px] right-[5%] z-30 cursor-pointer "
             onClick={() => setShowModal(false)}
           >
-            <CloseIcon size={40} className="text-white" />
+            <CloseIcon size={20} className="text-white" />
           </div>
           <ArrowLeftIcon
-            size={40}
-            className="text-white absolute top-[50%] left-[100px] transform translate-y-[-50%]"
+            size={30}
+            className="text-white absolute top-[50%] left-[5%] transform translate-y-[-50%] cursor-pointer"
             onClick={() => handleImageNavigation("back")}
           />
           <img
@@ -54,8 +54,8 @@ const PhotoGallery = ({ photos }: IPhotoGalleryProps) => {
             className="max-w-lg pointer-events-none"
           />
           <ArrowRightIcon
-            size={40}
-            className="text-white absolute top-[50%] right-[100px] transform translate-y-[-50%]"
+            size={30}
+            className="text-white absolute top-[50%] right-[5%] transform translate-y-[-50%] cursor-pointer"
             onClick={() => handleImageNavigation("next")}
           />
         </div>
