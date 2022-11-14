@@ -22,7 +22,7 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <Link href={linkUrl}>
-      <div className="cursor-pointer w-full h-full relative shadow-md sm:hover:scale-[102%] ease-in duration-200 p-4 mr-4 rounded-md shadow-gray-500 bg-zinc-900 mt-4">
+      <div className="cursor-pointer w-full h-full relative sm:hover:scale-[102%] ease-in duration-200 p-4 mr-4 rounded-md shadow-xl shadow-black bg-zinc-800">
         <div
           className={`w-full min-h-[300px] bg-cover bg-center `}
           style={{ backgroundImage: `url(/${imgUrl})` }}
@@ -33,11 +33,10 @@ const ProjectCard = ({
             {title}
           </h2>
           <div className=" mt-5">
-               <p className=" text-white italic mb-2">{text}</p>
-               <p className=" text-white italic mb-2">{text1}</p>
-               <p className=" text-white italic mb-2">{text2}</p>
+            <p className=" text-white italic mb-2">{text}</p>
+            <p className=" text-white italic mb-2">{text1}</p>
+            <p className=" text-white italic mb-2">{text2}</p>
           </div>
-       
         </div>
       </div>
     </Link>

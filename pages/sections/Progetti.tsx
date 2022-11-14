@@ -63,18 +63,20 @@ const progetti: ProjectCardProps[] = [
 const Progetti = () => {
   return (
     <>
-      <section id="progetti" className=" my-20 mb-48">
-        <hr className="w-[20%] border-1 border-amber-600 my-4 mb-3 m-auto" />
-        <h2 className=" text-white text-center font-semibold uppercase p-2 tracking-wide text-3xl sm:text-4xl">
-          cosa facciamo
-        </h2>
-        <h3 className=" text-white text-center p-2 tracking-wide text-md sm:text-xl">
-          Diamo ai nostri lavori l'originalita' che solo un prodotto artigianale
-          puo' avere
-        </h3>
-        <hr className="w-[90%] border-1 mx-auto border-amber-600 my-2 mb-20 xl:ml-24" />
+      <section id="progetti">
+        <div className="p-10">
+          <hr className="w-[20%] border-1 border-amber-600 mb-3 m-auto" />
+          <h2 className=" text-black text-center font-semibold uppercase p-2 tracking-wide text-3xl sm:text-4xl">
+            cosa facciamo
+          </h2>
+          <h3 className=" text-slate-100 text-center p-2 tracking-wide text-md sm:text-xl">
+            Diamo ai nostri lavori l'originalita' che solo un prodotto
+            artigianale puo' avere
+          </h3>
+          <hr className="w-[90%] border-1 mx-auto border-amber-600 my-2 mb-3 xl:ml-24" />
+        </div>
 
-        <div className=" lg:grid-cols-3 md:grid grid-cols-2 mx-4 gap-6 items-center xl:mx-20 m-auto">
+        <div className=" lg:grid-cols-3 md:grid grid-cols-2 gap-8 items-center xl:mx-20 m-auto">
           {progetti.map((progetto) => (
             <ProjectCard
               key={progetto.index}

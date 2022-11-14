@@ -3,8 +3,8 @@ import React from "react";
 const ChiSiamo = () => {
   return (
     <>
-      <section id="chi-siamo" className=" mt-20 lg:my-48 w-full">
-        <div className=" md:grid grid-cols-2 gap-2 items-center m-auto xl:px-24 px-4">
+      <section id="chi-siamo" className=" w-full h-screen grid items-center">
+        <div className=" md:grid grid-cols-2 gap-2 m-auto xl:px-24 px-4">
           <div className=" text-white md:m-auto">
             <hr className="w-[25%] border-1 border-amber-600 my-4" />
             <h1 className=" text-white font-semibold uppercase p-4 text-2xl tracking-wide lg:text-3xl">
@@ -31,7 +31,7 @@ const ChiSiamo = () => {
               <hr className="w-[55%] border-1 border-amber-600 my-5" />
             </div>
           </div>
-          <div className=" w-full min-h-[500px] bg-no-repeat bg-cover bg-center shadow-lg mt-4 p-4 bg-[url('/ChiSiamo.png')]"></div>
+          <div className=" w-full min-h-[500px] bg-no-repeat bg-cover bg-center shadow-xl shadow-black mt-4 p-4 bg-[url('/ChiSiamo.png')]"></div>
         </div>
       </section>
     </>
