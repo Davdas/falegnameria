@@ -73,10 +73,10 @@ const Progetti = () => {
             Diamo ai nostri lavori l&apos;originalita&apos; che solo un prodotto
             artigianale puo&apos; avere
           </h3>
-          <hr className="w-[90%] border-1 mx-auto border-amber-600 my-2 mb-3 xl:ml-24" />
+          <hr className="w-[60%] border-1 m-auto border-amber-600 my-2 mb-3" />
         </div>
 
-        <div className=" lg:grid-cols-3 md:grid grid-cols-2 gap-8 items-center xl:mx-20 m-auto mt-10">
+        <div className=" lg:grid-cols-3 md:grid grid-cols-2 gap-8 items-center xl:mx-20 m-5 mt-10">
           {progetti.map((progetto) => (
             <ProjectCard
               key={progetto.index}

@@ -8,7 +8,7 @@ const HeroSection = () => {
       {/* Hero Image */}
       <div className="w-full h-screen bg-cover bg-center relative md:bg-[url('/heroImage.png')] bg-[url('/mobile.jpg')] shadow-md shadow-black">
         {/* Overlay */}
-        <div className=" bg-black/40 z-10 w-full bg-cover bg-center absolute top-0 left-0 right-0 bottom-0"></div>
+        <div className=" bg-black/50 z-10 w-full bg-cover bg-center absolute top-0 left-0 right-0 bottom-0"></div>
       </div>
 
       <div className="absolute text-center top-[55%] z-10">

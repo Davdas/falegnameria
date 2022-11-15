@@ -83,7 +83,7 @@ const Navbar = () => {
             }
           >
             <div className=" flex w-full items-center justify-between p-2">
-              <Image src="/logo.png" width="110" height="55" alt="/" />
+              <Image src="/logo1.jpg" width="110" height="55" alt="/" />
               <div
                 onClick={handleNav}
                 className=" cursor-pointer text-stone-200"
