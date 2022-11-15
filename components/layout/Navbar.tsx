@@ -40,10 +40,18 @@ const Navbar = () => {
             <ScrollLink hash="contatti" text="Contatti" />
 
             <div className=" px-2 flex cursor-pointer">
-              <a href="https://www.facebook.com" target="_blank">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <BsFacebook className=" mr-2" />
               </a>
-              <a href="https://www.instagram.com/" target="_blank">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <BsInstagram />
               </a>
             </div>

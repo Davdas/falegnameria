@@ -45,10 +45,18 @@ const Footer = () => {
             <div className="flex justify-center flex-col">
               <h2 className=" text-center">Seguici sui nostri canali social</h2>
               <div className=" flex justify-center p-2">
-                <a href="https://www.facebook.com" target="_blank">
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <BsFacebook className=" mr-2" />
                 </a>
-                <a href="https://www.instagram.com/" target="_blank">
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <BsInstagram />
                 </a>
               </div>

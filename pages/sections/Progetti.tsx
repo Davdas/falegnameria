@@ -69,9 +69,9 @@ const Progetti = () => {
           <h2 className=" text-black text-center font-semibold uppercase p-2 tracking-wide text-3xl sm:text-4xl">
             cosa facciamo
           </h2>
-          <h3 className=" text-slate-100 text-center p-2 tracking-wide text-md sm:text-xl">
-            Diamo ai nostri lavori l'originalita' che solo un prodotto
-            artigianale puo' avere
+          <h3 className="text-slate-100 text-center p-2 tracking-wide text-md sm:text-xl">
+            Diamo ai nostri lavori l&apos;originalita&apos; che solo un prodotto
+            artigianale puo&apos; avere
           </h3>
           <hr className="w-[90%] border-1 mx-auto border-amber-600 my-2 mb-3 xl:ml-24" />
         </div>
