@@ -3,7 +3,7 @@ import React from "react";
 const ChiSiamo = () => {
   return (
     <>
-      <section id="chi-siamo" className=" w-full h-screen grid items-center">
+      <section id="chi-siamo" className=" w-full grid items-center my-20">
         <div className=" md:grid grid-cols-2 gap-2 m-auto xl:px-24 px-4">
           <div className=" text-white md:m-auto">
             <hr className="w-[25%] border-1 border-amber-600 my-4" />
@@ -32,7 +32,7 @@ const ChiSiamo = () => {
               <hr className="w-[55%] border-1 border-amber-600 my-5" />
             </div>
           </div>
-          <div className="w-full min-h-[500px] bg-no-repeat bg-cover bg-center shadow-xl shadow-black mt-4 p-4 bg-[url('/ChiSiamo.png')]"></div>
+          <div className="w-full min-h-[250px] sm:h-[450px] bg-no-repeat bg-cover bg-center shadow-xl shadow-black p-4 bg-[url('/ChiSiamo.png')]"></div>
         </div>
       </section>
     </>

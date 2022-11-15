@@ -96,9 +96,9 @@ const Navbar = () => {
                 creiamo arredamenti su misura per la tua casa
               </p>
             </div>
-            <div className=" flex flex-col mt-10">
+            <div className=" flex flex-col">
               <ul className=" uppercase text-stone-200 text-sm text-center font-semibold">
-                <li className=" my-8 mr-10" onClick={closeMenu}>
+                <li className=" mr-10" onClick={closeMenu}>
                   <ScrollLink hash="home" text="home" />
                 </li>
                 <li className=" my-8 mr-10" onClick={closeMenu}>
@@ -115,7 +115,7 @@ const Navbar = () => {
                   <BsInstagram className=" text-stone-400" size={18} />
                 </div>
                 <li className=" text-stone-200 font-semibold my-8"></li>
-                <li className=" my-8 mr-10 text-amber-600" onClick={closeMenu}>
+                <li className=" my-4 mr-10 text-amber-600" onClick={closeMenu}>
                   <ScrollLink hash="progetti" text="scopri di piu" />
                 </li>
                 <Link href="/preventivo">

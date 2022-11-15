@@ -22,7 +22,7 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <Link href={linkUrl}>
-      <div className="cursor-pointer w-full h-full relative sm:hover:scale-[102%] ease-in duration-200 p-4 mr-4 rounded-md shadow-xl shadow-black bg-zinc-800">
+      <div className="cursor-pointer w-full h-full relative sm:hover:scale-[102%] ease-in duration-200 p-4 mr-4 rounded-md shadow-xl shadow-black bg-zinc-800 mb-2">
         <div
           className={`w-full min-h-[300px] bg-cover bg-center `}
           style={{ backgroundImage: `url(/${imgUrl})` }}
