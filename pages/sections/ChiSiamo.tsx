@@ -7,7 +7,7 @@ const ChiSiamo = () => {
         id="chi-siamo"
         className=" w-full grid items-center bg-[#262525] shadow-xl shadow-black"
       >
-        <div className=" md:grid grid-cols-2 gap-2 m-auto xl:px-24 px-4 my-24">
+        <div className=" md:grid grid-cols-2 gap-2 m-auto xl:px-24 px-4 my-32">
           <div className=" text-white md:m-auto">
             <hr className="w-[25%] border-1 border-amber-600 my-4" />
             <h1 className=" text-white font-semibold uppercase p-4 text-2xl tracking-wide lg:text-3xl">
