@@ -2,16 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-#chi-siamo {
-  background-color: rgb(34, 33, 33);
-}
-
-#progetti {
-  background-color: rgb(51, 51, 51);
-}
-
-#contatti {
-  background-color: rgb(34, 33, 33);
+html {
+  background-color: black;
 }
 
 html,

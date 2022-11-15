@@ -31,9 +31,9 @@ const Navbar = () => {
       >
         <ul className=" md:flex max-w-7xl m-auto text-white items-center justify-between mt-5 mb-3 lg:justify-around">
           <li className=" cursor-pointer ml-5">
-            <Image src="/../public/logo.png" width="140" height="70" alt="/" />
+            <Image src="/logo.png" width="140" height="70" alt="/" />
           </li>
-          <div className=" hidden lg:flex font-semibold">
+          <div className="hidden lg:flex font-semibold">
             <ScrollLink hash="home" text="home" />
             <ScrollLink hash="chi-siamo" text="Chi Siamo" />
             <ScrollLink hash="progetti" text="Progetti" />
@@ -83,12 +83,7 @@ const Navbar = () => {
             }
           >
             <div className=" flex w-full items-center justify-between p-2">
-              <Image
-                src="/../public/logo.png"
-                width="110"
-                height="55"
-                alt="/"
-              />
+              <Image src="/logo.png" width="110" height="55" alt="/" />
               <div
                 onClick={handleNav}
                 className=" cursor-pointer text-stone-200"

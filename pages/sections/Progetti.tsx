@@ -23,7 +23,7 @@ const progetti: ProjectCardProps[] = [
     text2: "Letti su misura per te",
   },
   {
-    imgUrl: "armadio.png",
+    imgUrl: "Armadio.png",
     index: "03",
     linkUrl: "/ambienti/armadio",
     title: "Armadi e Librerie",
@@ -66,7 +66,7 @@ const Progetti = () => {
       <section id="progetti">
         <div className="p-10">
           <hr className="w-[20%] border-1 border-amber-600 mb-3 m-auto" />
-          <h2 className=" text-black text-center font-semibold uppercase p-2 tracking-wide text-3xl sm:text-4xl">
+          <h2 className=" text-white text-center font-semibold uppercase p-2 tracking-wide text-3xl sm:text-4xl">
             cosa facciamo
           </h2>
           <h3 className="text-slate-100 text-center p-2 tracking-wide text-md sm:text-xl">
