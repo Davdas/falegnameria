@@ -64,7 +64,7 @@ const Progetti = () => {
   return (
     <>
       <section id="progetti" className="w-full bg-[#1f1e1e] grid items-center">
-        <div className=" mt-20">
+        <div className=" mt-24">
           <hr className="w-[20%] border-1 border-amber-600 mb-3 m-auto mt-5" />
           <h2 className=" text-white text-center font-semibold uppercase p-2 tracking-wide text-3xl sm:text-4xl">
             cosa facciamo
