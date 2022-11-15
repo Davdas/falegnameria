@@ -21,25 +21,26 @@ const ProjectCard = ({
   linkUrl,
 }: ProjectCardProps) => {
   return (
-    <Link href={linkUrl}>
-      <div className="cursor-pointer w-full h-full relative sm:hover:scale-[102%] ease-in duration-200 p-4 mr-4 rounded-md shadow-xl shadow-black bg-zinc-800 mb-2">
-        <div
-          className={`w-full min-h-[300px] bg-cover bg-center `}
-          style={{ backgroundImage: `url(/${imgUrl})` }}
-        />
+    <div className="cursor-pointer w-full h-full relative sm:hover:scale-[102%] ease-in duration-200 p-4 mr-4 rounded-md shadow-xl shadow-black bg-zinc-800 mb-4">
+      <div
+        className={`w-full min-h-[300px] bg-cover bg-center `}
+        style={{ backgroundImage: `url(/${imgUrl})` }}
+      />
 
-        <div className=" p-4 mt-5">
-          <h2 className=" text-amber-600 uppercase tracking-wide text-3xl mt-3">
-            {title}
-          </h2>
-          <div className=" mt-5">
-            <p className=" text-white italic mb-2">{text}</p>
-            <p className=" text-white italic mb-2">{text1}</p>
-            <p className=" text-white italic mb-2">{text2}</p>
-          </div>
+      <div className=" p-4 mt-5">
+        <h2 className=" text-amber-600 uppercase tracking-wide text-3xl mt-3">
+          {title}
+        </h2>
+        <div className=" mt-5">
+          <p className=" text-white italic mb-2">{text}</p>
+          <p className=" text-white italic mb-2">{text1}</p>
+          <p className=" text-white italic mb-2">{text2}</p>
         </div>
+        <Link href={linkUrl}>
+          <p className=" text-white font-extrabold underline">Vedi Foto</p>
+        </Link>
       </div>
-    </Link>
+    </div>
   );
 };
 

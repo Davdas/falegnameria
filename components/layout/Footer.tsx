@@ -8,7 +8,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <section id="contatti" className=" mb-3">
+      <section id="contatti" className=" mb-3 bg-[#262525]">
         <div className=" text-white text-center cursor-pointer p-10">
           <Image src="/logo.png" width="170" height="85" alt="/" />
         </div>

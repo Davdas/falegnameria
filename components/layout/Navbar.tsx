@@ -78,7 +78,7 @@ const Navbar = () => {
           <div
             className={
               nav
-                ? " fixed top-0 left-0 w-[75%] sm:w-[64%] md:w-[45%] h-screen bg-black/80 p-4 ease-in duration-300"
+                ? " fixed top-0 left-0 w-[75%] sm:w-[64%] md:w-[45%] h-screen bg-[#1f1e1e]/90 p-4 ease-in duration-300"
                 : " fixed top-[0] left-[-200%] p-4 ease-in duration-300"
             }
           >
