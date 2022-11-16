@@ -10,7 +10,9 @@ const Footer = () => {
     <>
       <section id="contatti" className=" bg-[#262525] pb-3">
         <div className=" text-white text-center cursor-pointer p-10">
-          <Image src="/logo.png" width="170" height="85" alt="/" />
+          <a href="#home">
+            <Image src="/logo.png" width="170" height="85" alt="/" />
+          </a>
         </div>
         <div className=" block lg:flex justify-around items-center w-full h-full text-center">
           <div className="text-white lg:text-lg text-md uppercase cursor-pointer mb-10">

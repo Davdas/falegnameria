@@ -27,7 +27,7 @@ const ProjectCard = ({
         style={{ backgroundImage: `url(/${imgUrl})` }}
       />
       <Link href={linkUrl}>
-        <p className=" text-white font-extrabold underline px-4 mt-2">
+        <p className=" text-white px-4 mt-3 underline underline-offset-8 hover:text-gray-400 inline-block">
           Vedi Foto
         </p>
       </Link>

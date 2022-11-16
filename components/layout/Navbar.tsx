@@ -31,7 +31,9 @@ const Navbar = () => {
       >
         <ul className=" md:flex max-w-7xl m-auto text-white items-center justify-between mt-5 mb-3 lg:justify-around">
           <li className=" cursor-pointer ml-5">
-            <Image src="/logo.png" width="140" height="70" alt="/" />
+            <a href="#home">
+              <Image src="/logo.png" width="140" height="70" alt="/" />
+            </a>
           </li>
           <div className="hidden lg:flex font-semibold">
             <ScrollLink hash="home" text="home" />
