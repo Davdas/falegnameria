@@ -54,7 +54,7 @@ const progetti: ProjectCardProps[] = [
     index: "06",
     linkUrl: "/ambienti/porte",
     title: "Porte",
-    text: "IL primo protagonista della tua casa",
+    text: "Il primo protagonista della tua casa",
     text1: "Vere porte di falegnameria di altissima qualita'",
     text2: "Porte su misura per te",
   },
