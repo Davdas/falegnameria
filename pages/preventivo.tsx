@@ -23,13 +23,15 @@ const Preventivo = () => {
               <span className=" text-amber-600"> Preventivo</span>
             </h2>
             <h2 className=" md:text-lg">Inviaci una email a: </h2>
-            <div className=" flex justify-center">
-              <AiOutlineMail className="mt-1" />
-              <h3 className=" ml-2 mb-5 text-sm mt-1">
-                lab.mancinifalegnameria@gmail.com
+            <div className=" flex justify-center my-2">
+              <AiOutlineMail className=" mt-1" />
+              <h3 className=" ml-2 hover:text-gray-300">
+                <a href="mailto:lab.mancinifalegnameria@gmail.com">
+                  lab.mancinifalegnameria@gmail.com
+                </a>
               </h3>
             </div>
-            <h2 className=" tracking-wide md:text-lg">
+            <h2 className=" tracking-wide md:text-lg mt-5">
               Richiedi il tuo Preventivo Personalizzato e Gratuito
             </h2>
           </div>

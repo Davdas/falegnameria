@@ -70,8 +70,8 @@ const Progetti = () => {
             cosa facciamo
           </h2>
           <h3 className="text-slate-100 text-center p-2 tracking-wide text-md sm:text-xl">
-            Diamo ai nostri lavori l&apos;originalita&apos; che solo un prodotto
-            artigianale puo&apos; avere
+            Diamo ai nostri lavori l&apos;originalità che solo un prodotto
+            artigianale può avere
           </h3>
           <hr className="w-[60%] border-1 m-auto border-amber-600 my-2 mb-3" />
         </div>

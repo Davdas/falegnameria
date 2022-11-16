@@ -92,9 +92,9 @@ const Navbar = () => {
               </div>
             </div>
             <div className="border-b border-amber-600 my-8 py-5 text-center">
-              <p className=" text-stone-200 capitalize py-2 text-xl">
+              <h2 className=" text-stone-200 capitalize py-2 text-xl">
                 creiamo arredamenti su misura per la tua casa
-              </p>
+              </h2>
             </div>
             <div className=" flex flex-col">
               <ul className=" uppercase text-stone-200 text-sm text-center font-semibold">
@@ -111,8 +111,20 @@ const Navbar = () => {
                   <ScrollLink hash="contatti" text="contatti" />
                 </li>
                 <div className=" flex justify-center cursor-pointer">
-                  <BsFacebook className=" mr-2 text-stone-400" size={18} />
-                  <BsInstagram className=" text-stone-400" size={18} />
+                  <a
+                    href="https://www.facebook.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <BsFacebook className=" mr-2" />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <BsInstagram />
+                  </a>
                 </div>
                 <li className=" text-stone-200 font-semibold my-8"></li>
                 <li className=" my-4 mr-10 text-amber-600" onClick={closeMenu}>

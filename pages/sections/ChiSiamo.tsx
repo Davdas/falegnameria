@@ -27,10 +27,9 @@ const ChiSiamo = () => {
               </p>
               <br />
               <p className=" md:mb-10 text-sm font-light">
-                Siamo una piccola realta&apos; romana che in pochi anni si
-                e&apos;fatta conoscere e apprezzare per la professionalita&apos;
-                e qualita&apos; che mettiamo nella realizzazione dei nostri
-                lavori.
+                Siamo una piccola realtà romana che in pochi anni si è fatta
+                conoscere e apprezzare per la professionalità e qualità che
+                mettiamo nella realizzazione dei nostri lavori.
               </p>
               <hr className="w-[55%] border-1 border-amber-600 my-5" />
             </div>
