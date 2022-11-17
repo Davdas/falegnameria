@@ -33,8 +33,6 @@ const PhotoGallery = ({ photos }: IPhotoGalleryProps) => {
     }
   };
 
-  console.log(photos);
-
   return (
     <>
       {showModal && selectedPhotoIndex !== undefined && (
