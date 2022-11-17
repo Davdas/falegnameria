@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Masonry from "react-responsive-masonry";
+// import Masonry from "react-responsive-masonry";
 import { AiOutlineClose as CloseIcon } from "react-icons/ai";
 import {
   BsArrowRightCircle as ArrowRightIcon,
@@ -35,16 +35,16 @@ const PhotoGallery = ({ photos }: IPhotoGalleryProps) => {
 
   return (
     <>
-      <Masonry gutter="15px" className=" p-3">
-        {photos.map((photo, index) => (
-          <img
-            onClick={() => handleImageClick(index)}
-            key={photo.foto.url}
-            src={photo.foto.url}
-            alt={photo.foto.url}
-          />
-        ))}
-      </Masonry>
+      {/* <Masonry gutter="15px" className=" p-3"> */}
+      {photos.map((photo, index) => (
+        <img
+          onClick={() => handleImageClick(index)}
+          key={photo.foto.url}
+          src={photo.foto.url}
+          alt={photo.foto.url}
+        />
+      ))}
+      {/* </Masonry> */}
 
       {showModal && selectedPhotoIndex !== undefined && (
         <div className="fixed top-[50px] left-0 right-0 w-full mx-auto h-full bg-black bg-opacity-70 flex items-center justify-center">
