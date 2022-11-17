@@ -128,13 +128,9 @@ const Navbar = () => {
                     <BsInstagram />
                   </a>
                 </div>
-                <li className=" text-stone-200 font-semibold my-8"></li>
-                <li className=" my-4 mr-10 text-amber-600" onClick={closeMenu}>
-                  <ScrollLink hash="progetti" text="scopri di piu" />
-                </li>
                 <Link href="/preventivo">
                   <li
-                    className=" lg:flex border border-white text-sm rounded-sm uppercase px-3 py-2 font-semibold hover:bg-stone-600 w-[50%] mx-auto"
+                    className=" lg:flex border border-white text-sm rounded-sm uppercase mt-6 px-3 py-2 font-semibold hover:bg-stone-600 w-[50%] mx-auto"
                     onClick={closeMenu}
                   >
                     preventivo
