@@ -33,6 +33,8 @@ const PhotoGallery = ({ photos }: IPhotoGalleryProps) => {
     }
   };
 
+  console.log(photos);
+
   return (
     <>
       {showModal && selectedPhotoIndex !== undefined && (
@@ -60,7 +62,7 @@ const PhotoGallery = ({ photos }: IPhotoGalleryProps) => {
           />
         </div>
       )}
-      <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
+      <ResponsiveMasonry>
         <Masonry gutter="15px" className=" p-3">
           {photos.map((photo, index) => (
             <img
