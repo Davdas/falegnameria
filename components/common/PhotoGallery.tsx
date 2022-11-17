@@ -1,7 +1,5 @@
 import { useState } from "react";
-// import Masonry from "react-responsive-masonry";
 import Masonry from "react-masonry-css";
-
 import { AiOutlineClose as CloseIcon } from "react-icons/ai";
 import {
   BsArrowRightCircle as ArrowRightIcon,
@@ -36,9 +34,13 @@ const PhotoGallery = ({ photos }: IPhotoGalleryProps) => {
   };
 
   return (
-    <>
+    <div className="px-4 lg:px-0 mt-6">
       <Masonry
-        breakpointCols={3}
+        breakpointCols={{
+          default: 3,
+          700: 2,
+          500: 1,
+        }}
         className="flex w-auto -ml-4"
         columnClassName="bg-clip-padding pl-4"
       >
@@ -78,7 +80,7 @@ const PhotoGallery = ({ photos }: IPhotoGalleryProps) => {
           />
         </div>
       )}
-    </>
+    </div>
   );
 };
 
