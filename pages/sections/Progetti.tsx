@@ -5,7 +5,7 @@ import ProjectCard, {
 
 const progetti: ProjectCardProps[] = [
   {
-    imgUrl: "cucina.png",
+    imgUrl: "cucinaResize.png",
     index: "01",
     linkUrl: "/ambienti/cucine",
     title: " Cucine",
@@ -14,7 +14,7 @@ const progetti: ProjectCardProps[] = [
     text2: "Cucine su misura per te",
   },
   {
-    imgUrl: "CameraDaLetto.png",
+    imgUrl: "CameraDaLettoResize.png",
     index: "02",
     linkUrl: "/ambienti/camera-da-letto",
     title: " Letti",
@@ -23,7 +23,7 @@ const progetti: ProjectCardProps[] = [
     text2: "Letti su misura per te",
   },
   {
-    imgUrl: "Armadio.png",
+    imgUrl: "ArmadioResize.png",
     index: "03",
     linkUrl: "/ambienti/armadio",
     title: "Armadi e Librerie",
@@ -32,7 +32,7 @@ const progetti: ProjectCardProps[] = [
     text2: "Armadi e Librerie su misura per te",
   },
   {
-    imgUrl: "ArredoBagno.png",
+    imgUrl: "ArredoBagnoResize.png",
     index: "04",
     linkUrl: "/ambienti/arredo-bagno",
     title: "Arredo bagno",
@@ -41,7 +41,7 @@ const progetti: ProjectCardProps[] = [
     text2: "Bagno su misura per te",
   },
   {
-    imgUrl: "console.png",
+    imgUrl: "consoleResize.png",
     index: "05",
     linkUrl: "/ambienti/console",
     title: "Consolle e Copri Termosifoni",
@@ -50,7 +50,7 @@ const progetti: ProjectCardProps[] = [
     text2: "Accessori su misura per te",
   },
   {
-    imgUrl: "Porte.png",
+    imgUrl: "PorteResize.png",
     index: "06",
     linkUrl: "/ambienti/porte",
     title: "Porte",

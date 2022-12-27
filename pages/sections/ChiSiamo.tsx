@@ -34,7 +34,7 @@ const ChiSiamo = () => {
               <hr className="w-[55%] border-1 border-amber-600 my-5" />
             </div>
           </div>
-          <div className="w-full min-h-[250px] sm:h-[450px] bg-no-repeat bg-cover bg-center shadow-xl shadow-black p-4 bg-[url('/ChiSiamo.png')]"></div>
+          <div className="w-full min-h-[250px] sm:h-[450px] bg-no-repeat bg-cover bg-center shadow-xl shadow-black p-4 bg-[url('/ChiSiamoResize.png')]"></div>
         </div>
       </section>
     </>

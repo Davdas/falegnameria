@@ -35,7 +35,7 @@ const Navbar = () => {
               <Image src="/logo.png" width="140" height="70" alt="/" />
             </a>
           </li>
-          <div className="hidden lg:flex font-semibold">
+          <div className="hidden lg:flex font-bold">
             <ScrollLink hash="home" text="home" />
             <ScrollLink hash="chi-siamo" text="Chi Siamo" />
             <ScrollLink hash="progetti" text="Progetti" />
@@ -130,7 +130,7 @@ const Navbar = () => {
                 </div>
                 <Link href="/preventivo">
                   <li
-                    className=" lg:flex border border-white text-sm rounded-sm uppercase mt-6 px-3 py-2 font-semibold hover:bg-stone-600 w-[50%] mx-auto"
+                    className=" lg:flex border border-white text-sm rounded-sm uppercase mt-6 px-3 py-2 font-semibold hover:bg-stone-600 w-[50%] mx-auto tracking-wider"
                     onClick={closeMenu}
                   >
                     preventivo

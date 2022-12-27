@@ -24,7 +24,7 @@ const ProjectCard = ({
     <Link href={linkUrl}>
       <div className="cursor-pointer w-full h-full relative hover:scale-[98%] ease-in duration-100 hover:bg-zinc-700 shadow-xl shadow-black p-4 rounded-md bg-zinc-800 mb-4">
         <div
-          className={`w-full min-h-[300px] bg-cover bg-center `}
+          className={`w-full min-h-[300px] bg-cover bg-center rounded-sm `}
           style={{ backgroundImage: `url(/${imgUrl})` }}
         />
         <div className=" p-4 mt-5">
@@ -34,7 +34,7 @@ const ProjectCard = ({
           <div className=" mt-5">
             <p className=" text-white italic mb-2">{text}</p>
             <p className=" text-white italic mb-2">{text1}</p>
-            <p className=" text-white italic mb-2">{text2}</p>
+            <h2 className=" text-white italic mb-2">{text2}</h2>
           </div>
         </div>
       </div>

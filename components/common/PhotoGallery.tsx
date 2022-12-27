@@ -5,6 +5,7 @@ import {
   BsArrowRightCircle as ArrowRightIcon,
   BsArrowLeftCircle as ArrowLeftIcon,
 } from "react-icons/bs";
+import Link from "next/link";
 
 interface IPhotoGalleryProps {
   photos: any[];
@@ -34,15 +35,15 @@ const PhotoGallery = ({ photos }: IPhotoGalleryProps) => {
   };
 
   return (
-    <div className="px-4 lg:px-0 mt-6">
+    <div className="mt-6 mr-2">
       <Masonry
         breakpointCols={{
           default: 3,
           700: 2,
           500: 1,
         }}
-        className="flex w-auto -ml-4"
-        columnClassName="bg-clip-padding pl-4"
+        className="flex w-auto"
+        columnClassName="bg-clip-padding pl-3"
       >
         {photos.map((photo, index) => (
           <img
@@ -54,6 +55,11 @@ const PhotoGallery = ({ photos }: IPhotoGalleryProps) => {
           />
         ))}
       </Masonry>
+      <Link href="/preventivo">
+        <li className=" w-full ml-1 text-white text-center list-none text-lg border border-amber-600 rounded-sm uppercase px-3 py-5 hover:bg-stone-600 mb-5">
+          richiedi preventivo
+        </li>
+      </Link>
 
       {showModal && selectedPhotoIndex !== undefined && (
         <div className="fixed top-[50px] left-0 right-0 w-full mx-auto h-full bg-black bg-opacity-70 flex items-center justify-center">

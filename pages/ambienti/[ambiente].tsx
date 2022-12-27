@@ -4,8 +4,8 @@ import { createClient } from "../../prismicio";
 
 const AmbientePage = ({ page }: any) => {
   return (
-    <section className="max-w-[1000px] mx-auto mt-40 bg-black">
-      <div className=" text-white py-5 text-4xl text-center uppercase tracking-wider ml-5">
+    <section className="max-w-[1000px] m-auto mt-40 bg-black">
+      <div className=" text-white py-5 text-4xl text-center uppercase tracking-wider">
         {page.data.nome_ambiente}
         <hr className="w-[30%] border-1 border-amber-600 my-4 mb-3 m-auto" />
       </div>
