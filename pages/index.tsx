@@ -10,6 +10,10 @@ const Home: NextPage = () => {
     <div>
       <Head>
         <meta
+          name="google-site-verification"
+          content="aoKaclmwTuMYoGrxvUEKqUZJUDZdcrXBAXNlvohyxos"
+        />
+        <meta
           name="keywords"
           content="falegnameria,Roma, arredo su misura"
         ></meta>

@@ -60,7 +60,7 @@ const Navbar = () => {
           </div>
           <Link href="/preventivo">
             <li className=" hidden lg:flex border border-amber-600 text-sm rounded-sm uppercase px-3 py-2 font-semibold hover:bg-stone-600">
-              preventivo
+              preventivo gratuito
             </li>
           </Link>
           <div

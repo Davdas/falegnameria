@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Button from "./Button";
 
 export interface ProjectCardProps {
   index: string;
@@ -21,8 +22,8 @@ const ProjectCard = ({
   linkUrl,
 }: ProjectCardProps) => {
   return (
-    <Link href={linkUrl}>
-      <div className="cursor-pointer w-full h-full relative hover:scale-[98%] ease-in duration-100 hover:bg-zinc-700 shadow-xl shadow-black p-4 rounded-md bg-zinc-800 mb-4">
+    <>
+      <div className=" w-full h-full relative hover:scale-[98%] ease-in duration-100 hover:bg-zinc-700 shadow-xl shadow-black p-4 rounded-md bg-zinc-800 mb-4">
         <div
           className={`w-full min-h-[300px] bg-cover bg-center rounded-sm `}
           style={{ backgroundImage: `url(/${imgUrl})` }}
@@ -37,8 +38,13 @@ const ProjectCard = ({
             <h2 className=" text-white italic mb-2">{text2}</h2>
           </div>
         </div>
+        <Link href={linkUrl}>
+          <p className=" text-amber-600 uppercase underline underline-offset-4 hover:text-white cursor-pointer ml-4">
+            vedi foto
+          </p>
+        </Link>
       </div>
-    </Link>
+    </>
   );
 };
 

@@ -8,9 +8,9 @@ const Preventivo = () => {
     <>
       <form className=" tracking-wide">
         <div className=" w-[80%] h-[500px] flex flex-col p-5 text-center bg-zinc-900 m-auto mt-40 lg:w-[60%] rounded-md shadow-md shadow-white">
-          <div className=" flex ml-2">
+          <div className=" flex ml-2 justify-center items-center">
             <BsArrowLeftShort className=" text-lg text-white" />
-            <a href="/#home" className="text-amber-600 text-xs">
+            <a href="/#home" className="text-amber-600 text-md">
               torna alla Home
             </a>
           </div>

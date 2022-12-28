@@ -56,9 +56,9 @@ const PhotoGallery = ({ photos }: IPhotoGalleryProps) => {
         ))}
       </Masonry>
       <Link href="/preventivo">
-        <li className=" w-full ml-1 text-white text-center list-none text-lg border border-amber-600 rounded-sm uppercase px-3 py-5 hover:bg-stone-600 mb-5">
-          richiedi preventivo
-        </li>
+        <button className=" w-full ml-1 text-white text-center list-none text-lg border border-amber-600 rounded-sm uppercase px-3 py-5 hover:bg-stone-600 mb-5">
+          richiedi preventivo gratuito
+        </button>
       </Link>
 
       {showModal && selectedPhotoIndex !== undefined && (
