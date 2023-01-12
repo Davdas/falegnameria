@@ -20,7 +20,7 @@
     "**/*.ts",
     "**/*.tsx",
     "components/Sidebar.js",
-    "next-sitemap.js"
+    "public/next-sitemap.js"
   ],
   "exclude": ["node_modules"]
 }

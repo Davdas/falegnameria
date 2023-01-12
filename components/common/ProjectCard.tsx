@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import Button from "./Button";
 
 export interface ProjectCardProps {
   index: string;
