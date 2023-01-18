@@ -4,6 +4,10 @@ function generateSiteMap(posts) {
   return `<?xml version="1.0" encoding="UTF-8"?>
    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
      <!--We manually set the two URLs we know already-->
+     <loc
+        >http://www.mancinifalegnameria.it/#home/google09a2778f10456fed.html</loc
+      >
+      <lastmod>2021-06-01</lastmod>
      <url>
        <loc>https://mancinifalegnameria.it</loc>
      </url>
