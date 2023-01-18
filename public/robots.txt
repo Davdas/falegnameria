@@ -1,7 +1,9 @@
-User-agent: Googlebot
-Disallow: /nogooglebot/
-
+# *
 User-agent: *
 Allow: /
 
-Sitemap: https://www.mancinifalegnameria.it/sitemap.xml
+# Host
+Host: https://mancinifalegnameria.it
+
+# Sitemaps
+Sitemap: https://mancinifalegnameria.it/sitemap.xml
