@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://mancinifalegnameria.it
+Host: https://www.mancinifalegnameria.it
 
 # Sitemaps
-Sitemap: https://mancinifalegnameria.it/sitemap.xml
+Sitemap: https://www.mancinifalegnameria.it/sitemap.xml
